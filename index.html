@@ -5,10 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>9+10=21</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="R.jpg">
 </head>
 <body>
+  <!-- Audio element for the background sound -->
+  <audio autoplay>
+    <source src="toyota.mp3" type="audio/mp3">
+  </audio>
+
   <div class="background">
-    <video id="video" loop playsinline>
+    <video loop muted autoplay playsinline>
       <source src="toyota.mp4" type="video/mp4">
     </video>
   </div>
@@ -16,23 +22,9 @@
     <div id="particles-js"></div>
   </div>
   <div class="centered-container">
-    <h1>9+10=21</h1>
+    <h1>HELLO, YOU ARE GAY</h1>
   </div>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="particles-config.js"></script>
-  <script>
-    const video = document.getElementById("video");
-    video.play().then(() => {
-      // Unmute the video after it starts playing
-      video.muted = false;
-    }).catch(() => {
-      // Autoplay failed; user interaction required
-      video.addEventListener("click", () => {
-        video.play().then(() => {
-          video.muted = false;
-        });
-      });
-    });
-  </script>
 </body>
 </html>
