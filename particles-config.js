@@ -11,7 +11,7 @@ particlesJS("particles-js", {
       value: "#ffffff"
     },
     shape: {
-      type: "circle",
+      type: "circle", // Set the shape to "circle"
       stroke: {
         width: 0,
         color: "#000000"
