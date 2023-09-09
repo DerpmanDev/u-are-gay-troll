@@ -11,7 +11,7 @@ particlesJS("particles-js", {
       value: "#ffffff"
     },
     shape: {
-      type: "circle", // Set the shape to "circle"
+      type: "circle",
       stroke: {
         width: 0,
         color: "#000000"
@@ -38,7 +38,7 @@ particlesJS("particles-js", {
       }
     },
     line_linked: {
-      enable: true,
+      enable: false, // Disable lines
       distance: 150,
       color: "#ffffff",
       opacity: 0.4,
@@ -47,7 +47,7 @@ particlesJS("particles-js", {
     move: {
       enable: true,
       speed: 3,
-      direction: "none",
+      direction: "bottom", // Set the direction to "bottom" for falling down
       random: true,
       straight: false,
       out_mode: "out",
@@ -64,7 +64,7 @@ particlesJS("particles-js", {
     events: {
       onhover: {
         enable: true,
-        mode: "bubble" // Change mode to "bubble" for hover effect
+        mode: "bubble"
       },
       onclick: {
         enable: true,
@@ -73,7 +73,7 @@ particlesJS("particles-js", {
       resize: true
     },
     modes: {
-      bubble: { // Bubble settings for the hover effect
+      bubble: {
         distance: 100,
         size: 5,
         duration: 0.3,
